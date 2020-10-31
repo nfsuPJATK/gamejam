@@ -28,7 +28,7 @@ public class MapLoadScript : MonoBehaviour
         {
             if (i != GlobalControl.Instance.currentRow)
             {
-                foreach (string nodeName in (string[]) allNodes[i])
+                foreach (string nodeName in (List<string>) allNodes[i])
                 {
                     Button button = GameObject.Find(nodeName).GetComponent<Button>();
                     button.interactable = false;
