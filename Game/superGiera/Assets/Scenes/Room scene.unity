@@ -213,7 +213,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 133470966}
-  - component: {fileID: 133470965}
   - component: {fileID: 133470967}
   m_Layer: 0
   m_Name: GlobalObject
@@ -222,18 +221,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &133470965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133470964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2aeb8ede60fbd3a4a8f6e813bfcdb31f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &133470966
 Transform:
   m_ObjectHideFlags: 0
@@ -584,12 +571,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1791981141}
-        m_MethodName: 
+      - m_Target: {fileID: 1791981143}
+        m_MethodName: backClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

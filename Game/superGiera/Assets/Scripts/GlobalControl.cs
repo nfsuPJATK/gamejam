@@ -9,17 +9,18 @@ public class GlobalControl : MonoBehaviour
     public static GlobalControl Instance;
     public int currentRow;
     public List<string> visitedNodes;
-    public ArrayList allNodes = new ArrayList();
+    public List<List<string>> allNodes = new List<List<string>>();
+    public Vector3 prevCameraPosition;
 
     void Awake()
     {
-        allNodes.AddRange(new[] { "Start" });
-        allNodes.AddRange(new[] { "1A", "1B", "1C" });
-        allNodes.AddRange(new[] { "2A", "2B" });
-        allNodes.AddRange(new[] { "3" });
-        allNodes.AddRange(new[] { "4A", "4B" });
-        allNodes.AddRange(new[] { "5A", "5B", "5C" });
-        allNodes.AddRange(new[] { "Boss"});
+        allNodes.Add(new List<string>() { "Start" });
+        allNodes.Add(new List<string>() { "1A", "1B", "1C" });
+        allNodes.Add(new List<string>() { "2A", "2B" });
+        allNodes.Add(new List<string>() { "3" });
+        allNodes.Add(new List<string>() { "4A", "4B" });
+        allNodes.Add(new List<string>() { "5A", "5B", "5C" });
+        allNodes.Add(new List<string>() { "Boss"});
 
         if (Instance == null)
         {

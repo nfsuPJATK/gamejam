@@ -90,7 +90,7 @@ public class MapScript : MonoBehaviour
     }
     public void BossClick()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+        //UnityEngine.SceneManagement.SceneManager.LoadScene(2);
         GlobalControl.Instance.visitedNodes.Add("Boss");
         GlobalControl.Instance.currentRow=0;
 
